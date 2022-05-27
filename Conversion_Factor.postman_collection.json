@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "2595fb9c-3c28-4142-9d1f-c37e0f1977b6",
+		"name": "Conversion_Factor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/conversionFactor/currency/AUD",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversionFactor",
+						"currency",
+						"AUD"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1004,\r\n    \"currency\": \"INR\",\r\n    \"conversionFactor\": 50.0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/conversionFactor",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversionFactor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/conversionFactor/INR",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"conversionFactor",
+						"INR"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ConvertCurrency_get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "convertcurrency",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "ingress",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "ingress-currencyconvert",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}

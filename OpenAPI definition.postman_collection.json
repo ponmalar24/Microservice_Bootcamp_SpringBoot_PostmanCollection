@@ -1,0 +1,450 @@
+{
+	"info": {
+		"_postman_id": "806fdc79-2ddb-4b7d-8611-a4e83706ad63",
+		"name": "OpenAPI definition",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "todos",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "get Todo By Id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/todos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"todos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "77312dc0-c8ce-fed8-af1c-4d1806bebaf7",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/todos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"todos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "update Todo",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"user\": \"Duis consequat\",\n    \"id\": \"urn:uuid:bca16b47-0490-3e83-5612-8e23356078a5\",\n    \"task\": \"Lorem est Ut\",\n    \"targetDate\": \"2007-06-20\",\n    \"done\": true\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/todos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"todos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "77312dc0-c8ce-fed8-af1c-4d1806bebaf7",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"user\": \"Duis consequat\",\n    \"id\": \"urn:uuid:bca16b47-0490-3e83-5612-8e23356078a5\",\n    \"task\": \"Lorem est Ut\",\n    \"targetDate\": \"2007-06-20\",\n    \"done\": true\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/todos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"todos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "delete Todo By Id",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/todos/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"todos",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "77312dc0-c8ce-fed8-af1c-4d1806bebaf7",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/todos/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"todos",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "get Todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/todos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"todos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/todos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"todos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "add Todo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\": \"Duis consequat\",\n    \"id\": \"urn:uuid:bca16b47-0490-3e83-5612-8e23356078a5\",\n    \"task\": \"Lorem est Ut\",\n    \"targetDate\": \"2007-06-20\",\n    \"done\": true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/todos",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"todos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"user\": \"Duis consequat\",\n    \"id\": \"urn:uuid:bca16b47-0490-3e83-5612-8e23356078a5\",\n    \"task\": \"Lorem est Ut\",\n    \"targetDate\": \"2007-06-20\",\n    \"done\": true\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/todos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"todos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "get Todos By User",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/todos/user/:user",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"todos",
+								"user",
+								":user"
+							],
+							"variable": [
+								{
+									"key": "user",
+									"value": "qui in",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/todos/user/:user",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"todos",
+										"user",
+										":user"
+									],
+									"variable": [
+										{
+											"key": "user"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "get Todos By User 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/todos/date/:targetdate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"todos",
+								"date",
+								":targetdate"
+							],
+							"variable": [
+								{
+									"key": "targetdate",
+									"value": "2003-12-28",
+									"description": "(Required) "
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/todos/date/:targetdate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"todos",
+										"date",
+										":targetdate"
+									],
+									"variable": [
+										{
+											"key": "targetdate"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "getPopulationforAllCountry",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:9000",
+			"type": "string"
+		}
+	]
+}
